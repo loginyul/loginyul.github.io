@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#171d25">
+  <meta name="theme-color" content="#102c29">
   <title>Iuliia Loginova — игры и дизайн</title>
   <meta name="description" content="Проекты Iuliia Loginova: логическая игра «Охота на лис» и знак «Простор без дима». Играть, знакомиться, скачивать.">
   <link rel="canonical" href="https://loginyul.github.io/">
@@ -13,35 +13,40 @@
   <meta property="og:url" content="https://loginyul.github.io/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip" href="#main">К содержимому</a>
+  <a class="skip" href="#main" data-i18n="skip">К содержимому</a>
   <div class="shell">
     <header class="header">
       <a class="identity" href="./"><span class="monogram" aria-hidden="true">il.</span><span>IULIIA LOGINOVA</span></a>
-      <nav aria-label="Навигация"><a href="#projects">Проекты</a><a href="https://github.com/loginyul">GitHub</a></nav>
+      <div class="header-actions"><nav class="project-nav" aria-label="Навигация" data-i18n-label="navigation"><a href="#projects" data-i18n="projects">Проекты</a><a href="https://github.com/loginyul">GitHub</a></nav><nav class="language-switch" aria-label="Language / Језик / Язык">
+<button type="button" data-lang="sr" lang="sr-Cyrl" aria-label="Српски" aria-pressed="false">SR</button>
+<button type="button" data-lang="ru" lang="ru" aria-label="Русский" aria-pressed="true">RU</button>
+<button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+</nav></div>
     </header>
     <main id="main">
       <section class="intro" aria-labelledby="title">
-        <p class="eyebrow">ЛИЧНАЯ СТРАНИЦА · ИГРЫ И ДИЗАЙН</p>
-        <h1 id="title">Идеи, которыми<br>хочется <em>поделиться.</em></h1>
-        <p class="lede">Я — Юлия Логинова. Здесь собраны мои проекты:<br class="desktop-break"> игра для любителей логики и знак с заботой о чистом воздухе.</p>
+        <p class="eyebrow" data-i18n="eyebrow">ЛИЧНАЯ СТРАНИЦА · ИГРЫ И ДИЗАЙН</p>
+        <h1 id="title" data-i18n="title">Идеи, которыми<br>хочется <em>поделиться.</em></h1>
+        <p class="lede" data-i18n="intro">Я — Юлия Логинова. Здесь собраны мои проекты:<br class="desktop-break"> игра для любителей логики и знак с заботой о чистом воздухе.</p>
       </section>
       <section id="projects" class="projects" aria-labelledby="projects-title">
-        <div class="section-heading"><h2 id="projects-title">Мои проекты</h2><span>Можно попробовать прямо сейчас</span></div>
+        <div class="section-heading"><h2 id="projects-title" data-i18n="myProjects">Мои проекты</h2><span data-i18n="tryNow">Можно попробовать прямо сейчас</span></div>
         <div class="project-grid">
           <article class="project fox">
-            <a class="project-art fox-art" href="https://loginyul.github.io/foxhunting.github.io/" tabindex="-1" aria-hidden="true"><img src="assets/fox-cover.png" width="800" height="470" alt="" fetchpriority="high"></a>
-            <div class="project-copy"><p class="tag">ЛОГИЧЕСКАЯ ИГРА</p><h3>Охота на лис</h3><p>Лисы спрятались на поле. Читайте подсказки, проводите лучи и находите их с помощью логики.</p><a class="button" href="https://loginyul.github.io/foxhunting.github.io/">Об игре и играть</a><span class="detail">В браузере · без установки</span></div>
+            <a class="project-art fox-art" data-project-link href="https://loginyul.github.io/foxhunting.github.io/" tabindex="-1" aria-hidden="true"><img src="assets/fox-cover.png" width="800" height="470" alt="" fetchpriority="high"></a>
+            <div class="project-copy"><p class="tag" data-i18n="gameTag">ЛОГИЧЕСКАЯ ИГРА</p><h3 data-i18n="gameTitle">Охота на лис</h3><p data-i18n="gameText">Лисы спрятались на поле. Читайте подсказки, проводите лучи и находите их с помощью логики.</p><a class="button" data-project-link href="https://loginyul.github.io/foxhunting.github.io/" data-i18n="gameButton">Об игре и играть</a><span class="detail" data-i18n="gameDetail">В браузере · без установки</span></div>
           </article>
           <article class="project air">
-            <a class="project-art sign-art" href="https://loginyul.github.io/prostor-bez-dima/" tabindex="-1" aria-hidden="true"><img src="assets/bez-dima.png" width="1586" height="1578" alt="" fetchpriority="high"></a>
-            <div class="project-copy"><p class="tag">ЗНАК ДЛЯ ЧИСТОГО ВОЗДУХА</p><h3>Prostor bez dima</h3><p>Дружелюбный знак для пространств без дыма. Улыбающееся облако, листья и немного заботы друг о друге.</p><a class="button" href="https://loginyul.github.io/prostor-bez-dima/">Посмотреть и скачать</a><span class="detail">AI и PNG · CC BY 4.0</span></div>
+            <a class="project-art sign-art" data-project-link href="https://loginyul.github.io/prostor-bez-dima/" tabindex="-1" aria-hidden="true"><img src="assets/bez-dima.png" width="1586" height="1578" alt="" fetchpriority="high"></a>
+            <div class="project-copy"><p class="tag" data-i18n="signTag">ЗНАК ДЛЯ ЧИСТОГО ВОЗДУХА</p><h3>Prostor bez dima</h3><p data-i18n="signText">Дружелюбный знак для пространств без дыма. Улыбающееся облако, листья и немного заботы друг о друге.</p><a class="button" data-project-link href="https://loginyul.github.io/prostor-bez-dima/" data-i18n="signButton">Посмотреть и скачать</a><span class="detail">AI и PNG · CC BY 4.0</span></div>
           </article>
         </div>
       </section>
     </main>
-    <footer class="footer"><p>Iuliia Loginova <span>·</span> <a href="https://github.com/loginyul">@loginyul</a></p><p>Сделано с любопытством.</p></footer>
+    <footer class="footer"><p>Iuliia Loginova <span>·</span> <a href="https://github.com/loginyul">@loginyul</a></p><p data-i18n="footer">Сделано с любопытством.</p></footer>
   </div>
 </body>
 </html>
